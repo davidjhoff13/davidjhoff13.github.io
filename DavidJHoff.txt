@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>David Hoff Bio Page</title>
+</head>
+
+<body>
+    <h1>David J. Hoff</h1>
+    <a img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.ewa.org%2Fsites%2Fmain%2Ffiles%2Fimagecache%2Flightbox%2Fmain-images%2Fdavid-hoff.jpg&imgrefurl=https%3A%2F%2Fwww.ewa.org%2Fprofile%2Fdavid-hoff&tbnid=Fyv37T3LdEKoTM&vet=12ahUKEwie4t2F6PXpAhVTWN8KHVGyBugQMygVegUIARDHAQ..i&docid=WHGmvTEf94s5WM&w=293&h=419&q=david%20hoff%20images&ved=2ahUKEwie4t2F6PXpAhVTWN8KHVGyBugQMygVegUIARDHAQ/">Learn More!</a>
+    <h2>Bio</h2>
+    <p>David has decades of experience in communications and public affairs as an advisor to a Cabinet secretary, a public relations agency leader, and a nationally known journalist. </p>
+    <p>He leads strategic communications campaigns that increase awareness and engagement with target audiences. He is adept at employing a diverse set of communications tactics, including media relations, digital strategy, paid promotion, thought leadership, partnerships, and outreach to stakeholders. He leads crisis communications planning and advises clients on how to respond during crises. His subject matter expertise spans politics, public affairs, and domestic policy. He has extensive experience working in the education sector from early childhood through adult education. </p>
+
+    <h2>Social Media</h2>
+    <ul>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>href+"https://www.linkedin.com/in/davidjhoff/>LinkedIn</li>
+    </ul>
+
+    <table border=1>
+        <tr>
+            <th>Teams</th>
+            <th>Movies</th>
+            <th>Cities</th>
+        <tr>
+            <td>Washington Capitals</td>
+            <td>Washington Nationals</td>
+            <td>Bournemouth FC</td>
+        <tr>
+            <td>The Big Night</td>
+            <td>Play It Again Sam</td>
+            <td>North by Northwest</td>
+        
+            
+
