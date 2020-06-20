@@ -1,0 +1,46 @@
+Homepage
+
+As the novel coronavirus has spread across the globe, the United States has been hit the hardest. It has had more cases and Covid-19 deaths than any other country.
+
+But the impact hasn't been uniform. This project shows how the tiny virus has devastated some communities and left others untouched -- for now.
+
+The maps and statistical analysis for the project are based on data for the Centers for Disease Control at the state and county level. All analysis is based on data as of June 6, 2020, and will be updated regularly. 
+
+State Map
+
+The state shows that the death rate has been highest on the East Coast, with the epicenter being New York and New Jersey. 
+
+In the center of the country, Illinois, Louisiana, and Nebraska have the highest death rates per person.
+
+Montana, West Virginia, Maine, and Vermont have the lowest death rates. All of them are rural states without a large populations centers.
+
+Data notes:
+
+All maps, charts, and statistical analysis is based on CDC data of number of deaths at the state and county levels. The analysis is of deaths per 100,000 population for all geographic areas. The data were last updated on June 3. 
+
+
+Heat Maps
+The county level data show the intensity of Covid-19's impact expands beyond New York, spanning from Boston to Washington, DC.  
+
+Detroit and New Orleans have had a large number of deaths, as has been reported extensively in the media. Cities such as Denver and Indianapolis had large outbreaks. 
+
+Although rural states have had relatively low death rates, rural counties in Mississippi, Alabama, Georgia, Nebraska, and Colorado have been hot spots as well.
+
+On the west coast, California and Washington -- the states with the earliest and most aggressive social distancing policies -- don't have any red dots.
+
+Chloropleth
+The county-by-county map shows that large sections of the country have been unaffected by Covid-19 deaths. 
+
+It identifies the specific counties where the impact has been highest in in New York and New England, as well as small dots of rural areas. 
+
+It also shows that states that with the highest death rates have large geographic areas that have been relatively unaffected, including update New York, northern Michigan, and downstate Illinois. 
+
+Finally, a large sections of the country haven't had any counties with more than 10 deaths, including the entire states of Montana and Wyoming. 
+
+Statistics
+Researchers have identified the disproportionately high Covid-19 death rates of minorities, especially African Americans, and low-income people. 
+
+However, a statistical analysis of county data showed no corrleation between the death rate of Covid-19 based on the the minority population or per capita income. This suggests that geographic proximity to others with the virus is the largest factor in Covid-19 deaths.
+
+For more statistical analysis of national and New York data, click here. 
+

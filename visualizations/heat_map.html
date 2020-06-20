@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Covid 19 Dashboard</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
+
+</head>
+
+<body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid navbar-custom">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="col-xs-9 phone-nav">
+                        <a class="navbar-brand" href="../index.html" id="logo">Covid-19</a>
+                    </div>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right navbar-right-custom">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Comparisons<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="maps.html">Maps</a></li>
+                                <li><a href="stats.html">Plots</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li><a href="stats.html">Statistical Analysis</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="state_data.html">State Data</a></li>
+                                <li><a href="county_data.html">County Data</a></li>
+                            </ul>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
+    <!-- Start of container -->
+    <div class="container">
+        <section class="row">
+            <div class="col-md-8">
+                <article class="description-content">
+                    <h1 class="description-header">Heat Map</h1>
+                    <h2 class="map-header">County Data, Deaths per 100K Population</h2>
+                    <hr class="description-hr" />
+                    <img src="../assets/images/national covid heatmap 6.06.png" alt="" class="img-responsive" />
+                    <ul>
+                        <li>The heat map based on county data show the intensity of Covid-19's impact expands beyond New York, spanning from Boston to Washington, DC. </li>
+
+                        <li>Detroit and New Orleans have had a large number of deaths, as has been reported extensively in the media. Other cities such as Denver and Indianapolis had large outbreaks. </li>
+
+                        <li>Although rural states have had relatively low death rates, rural counties in Mississippi, Alabama, Georgia, Nebraska, and Colorado have been hot spots as well.</li>
+
+                        <li>On the west coast, California and Washington -- the states with the earliest and most aggressive social distancing policies -- don't have any red dots.</li>
+
+                    </ul>
+                </article>
+            </div>
+            <div class="col-md-4">
+
+                <!-- Start of Visualizations imageNav Area -->
+                <section id="imageNav-area">
+                    <div class="imageNav-content">
+                        <h2 class="imageNav-header">Maps</h2>
+                        <hr />
+                        <div id="images">
+                            <a href="state_map.html"><img src="../assets/images/Covid Deaths by State 6.06.png" alt="State Map" class="imageNav-photo"></a>
+                            <a href="heat_map.html"><img src="../assets/images/national covid heatmap 6.06.png" alt="Heat Map" class="imageNav-photo"></a>
+                            <a href="county_map.html"><img src="../assets/images/national chloropleth 6.06.png" alt="County Map" class="imageNav-photo"></a>
+                        </div>
+                    </div>
+                </section>
+                <!-- End of the Visualizations imageNav Area -->
+
+            </div>
+        </section>
+    </div>
+    <!-- End of container -->
+    <!-- Start of footer -->
+    <footer class="footer navbar-fixed-bottom">
+        <div class="two-toned-footer-color"></div>
+        <p class="text-muted text-muted-footer text-center">
+            &copy; Copyright DavidJHoff 2020
+        </p>
+    </footer>
+    <!-- End of footer -->
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>

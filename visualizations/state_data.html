@@ -1,0 +1,572 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Covid 19 Dashboard</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
+
+</head>
+
+<body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid navbar-custom">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="col-xs-9 phone-nav">
+                        <a class="navbar-brand" href="../index.html" id="logo">Covid-19</a>
+                    </div>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right navbar-right-custom">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Comparisons <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="maps.html">Maps</a></li>
+                                <li><a href="plots.html">Plots</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li><a href="stats.html">Statistical Analysis</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="state_data.html">State Data</a></li>
+                                <li><a href="county_data.html">County Data</a></li>
+                            </ul>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
+
+
+
+    <header class="header">
+        <h1>Covid-19 Mapping Project</h1>
+        <h2>State Data</h2>
+    </header>
+
+    <table border="1" class="dataframe">
+        <thead>
+            <tr style="text-align: right;">
+                <th></th>
+                <th>abbr</th>
+                <th>fips</th>
+                <th>jurisdiction</th>
+                <th>Total Cases</th>
+                <th>CasesInLast7Days</th>
+                <th>Deaths Per 100K Pop</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>0</th>
+                <td>NJ</td>
+                <td>34</td>
+                <td>New Jersey</td>
+                <td>165816</td>
+                <td>3748</td>
+                <td>186.13</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>NY</td>
+                <td>36</td>
+                <td>New York</td>
+                <td>172375</td>
+                <td>3162</td>
+                <td>154.69</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>MA</td>
+                <td>25</td>
+                <td>Massachusetts</td>
+                <td>104667</td>
+                <td>3075</td>
+                <td>151.64</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>RI</td>
+                <td>44</td>
+                <td>Rhode Island</td>
+                <td>15862</td>
+                <td>643</td>
+                <td>150.02</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>DC</td>
+                <td>11</td>
+                <td>District of Columbia</td>
+                <td>9589</td>
+                <td>573</td>
+                <td>136.51</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td>CT</td>
+                <td>9</td>
+                <td>Connecticut</td>
+                <td>44461</td>
+                <td>1370</td>
+                <td>124.45</td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td>DE</td>
+                <td>10</td>
+                <td>Delaware</td>
+                <td>10173</td>
+                <td>427</td>
+                <td>105.18</td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td>IL</td>
+                <td>17</td>
+                <td>Illinois</td>
+                <td>131327</td>
+                <td>7497</td>
+                <td>103.07</td>
+            </tr>
+            <tr>
+                <th>8</th>
+                <td>MD</td>
+                <td>24</td>
+                <td>Maryland</td>
+                <td>60613</td>
+                <td>4755</td>
+                <td>100.31</td>
+            </tr>
+            <tr>
+                <th>9</th>
+                <td>LA</td>
+                <td>22</td>
+                <td>Louisiana</td>
+                <td>44472</td>
+                <td>3339</td>
+                <td>95.43</td>
+            </tr>
+            <tr>
+                <th>10</th>
+                <td>NE</td>
+                <td>31</td>
+                <td>Nebraska</td>
+                <td>16315</td>
+                <td>1449</td>
+                <td>84.57</td>
+            </tr>
+            <tr>
+                <th>11</th>
+                <td>IA</td>
+                <td>19</td>
+                <td>Iowa</td>
+                <td>22973</td>
+                <td>2865</td>
+                <td>72.79</td>
+            </tr>
+            <tr>
+                <th>12</th>
+                <td>MI</td>
+                <td>26</td>
+                <td>Michigan</td>
+                <td>65449</td>
+                <td>7414</td>
+                <td>65.53</td>
+            </tr>
+            <tr>
+                <th>13</th>
+                <td>SD</td>
+                <td>46</td>
+                <td>South Dakota</td>
+                <td>5665</td>
+                <td>503</td>
+                <td>64.21</td>
+            </tr>
+            <tr>
+                <th>14</th>
+                <td>VA</td>
+                <td>51</td>
+                <td>Virginia</td>
+                <td>53211</td>
+                <td>5355</td>
+                <td>62.47</td>
+            </tr>
+            <tr>
+                <th>15</th>
+                <td>MS</td>
+                <td>28</td>
+                <td>Mississippi</td>
+                <td>18483</td>
+                <td>1923</td>
+                <td>61.89</td>
+            </tr>
+            <tr>
+                <th>16</th>
+                <td>PA</td>
+                <td>42</td>
+                <td>Pennsylvania</td>
+                <td>77999</td>
+                <td>4057</td>
+                <td>60.90</td>
+            </tr>
+            <tr>
+                <th>17</th>
+                <td>IN</td>
+                <td>18</td>
+                <td>Indiana</td>
+                <td>38748</td>
+                <td>3036</td>
+                <td>57.90</td>
+            </tr>
+            <tr>
+                <th>18</th>
+                <td>GA</td>
+                <td>13</td>
+                <td>Georgia</td>
+                <td>54973</td>
+                <td>6079</td>
+                <td>52.26</td>
+            </tr>
+            <tr>
+                <th>19</th>
+                <td>MN</td>
+                <td>27</td>
+                <td>Minnesota</td>
+                <td>29316</td>
+                <td>3446</td>
+                <td>52.25</td>
+            </tr>
+            <tr>
+                <th>20</th>
+                <td>CO</td>
+                <td>8</td>
+                <td>Colorado</td>
+                <td>28647</td>
+                <td>1587</td>
+                <td>50.30</td>
+            </tr>
+            <tr>
+                <th>21</th>
+                <td>AL</td>
+                <td>1</td>
+                <td>Alabama</td>
+                <td>22845</td>
+                <td>3994</td>
+                <td>46.74</td>
+            </tr>
+            <tr>
+                <th>22</th>
+                <td>NM</td>
+                <td>35</td>
+                <td>New Mexico</td>
+                <td>9367</td>
+                <td>1227</td>
+                <td>44.70</td>
+            </tr>
+            <tr>
+                <th>23</th>
+                <td>AZ</td>
+                <td>4</td>
+                <td>Arizona</td>
+                <td>31264</td>
+                <td>9041</td>
+                <td>43.59</td>
+            </tr>
+            <tr>
+                <th>24</th>
+                <td>UT</td>
+                <td>49</td>
+                <td>Utah</td>
+                <td>13429</td>
+                <td>2692</td>
+                <td>42.48</td>
+            </tr>
+            <tr>
+                <th>25</th>
+                <td>TN</td>
+                <td>47</td>
+                <td>Tennessee</td>
+                <td>28538</td>
+                <td>3548</td>
+                <td>42.15</td>
+            </tr>
+            <tr>
+                <th>26</th>
+                <td>ND</td>
+                <td>38</td>
+                <td>North Dakota</td>
+                <td>2980</td>
+                <td>301</td>
+                <td>39.21</td>
+            </tr>
+            <tr>
+                <th>27</th>
+                <td>NH</td>
+                <td>33</td>
+                <td>New Hampshire</td>
+                <td>5209</td>
+                <td>414</td>
+                <td>38.40</td>
+            </tr>
+            <tr>
+                <th>28</th>
+                <td>NC</td>
+                <td>37</td>
+                <td>North Carolina</td>
+                <td>39481</td>
+                <td>8704</td>
+                <td>38.02</td>
+            </tr>
+            <tr>
+                <th>29</th>
+                <td>WI</td>
+                <td>55</td>
+                <td>Wisconsin</td>
+                <td>21926</td>
+                <td>2526</td>
+                <td>37.72</td>
+            </tr>
+            <tr>
+                <th>30</th>
+                <td>KS</td>
+                <td>20</td>
+                <td>Kansas</td>
+                <td>10812</td>
+                <td>642</td>
+                <td>37.14</td>
+            </tr>
+            <tr>
+                <th>31</th>
+                <td>AR</td>
+                <td>5</td>
+                <td>Arkansas</td>
+                <td>10816</td>
+                <td>2749</td>
+                <td>35.89</td>
+            </tr>
+            <tr>
+                <th>32</th>
+                <td>CA</td>
+                <td>6</td>
+                <td>California</td>
+                <td>139281</td>
+                <td>21594</td>
+                <td>35.21</td>
+            </tr>
+            <tr>
+                <th>33</th>
+                <td>NV</td>
+                <td>32</td>
+                <td>Nevada</td>
+                <td>10417</td>
+                <td>1466</td>
+                <td>34.33</td>
+            </tr>
+            <tr>
+                <th>34</th>
+                <td>OH</td>
+                <td>39</td>
+                <td>Ohio</td>
+                <td>40004</td>
+                <td>3212</td>
+                <td>34.22</td>
+            </tr>
+            <tr>
+                <th>35</th>
+                <td>WA</td>
+                <td>53</td>
+                <td>Washington</td>
+                <td>24779</td>
+                <td>2295</td>
+                <td>32.88</td>
+            </tr>
+            <tr>
+                <th>36</th>
+                <td>SC</td>
+                <td>45</td>
+                <td>South Carolina</td>
+                <td>16441</td>
+                <td>3790</td>
+                <td>32.34</td>
+            </tr>
+            <tr>
+                <th>37</th>
+                <td>FL</td>
+                <td>12</td>
+                <td>Florida</td>
+                <td>67456</td>
+                <td>10163</td>
+                <td>31.67</td>
+            </tr>
+            <tr>
+                <th>38</th>
+                <td>TX</td>
+                <td>48</td>
+                <td>Texas</td>
+                <td>81583</td>
+                <td>13312</td>
+                <td>28.42</td>
+            </tr>
+            <tr>
+                <th>39</th>
+                <td>KY</td>
+                <td>21</td>
+                <td>Kentucky</td>
+                <td>11945</td>
+                <td>1535</td>
+                <td>26.73</td>
+            </tr>
+            <tr>
+                <th>40</th>
+                <td>MO</td>
+                <td>29</td>
+                <td>Missouri</td>
+                <td>15390</td>
+                <td>1623</td>
+                <td>25.12</td>
+            </tr>
+            <tr>
+                <th>41</th>
+                <td>ME</td>
+                <td>23</td>
+                <td>Maine</td>
+                <td>2667</td>
+                <td>249</td>
+                <td>19.93</td>
+            </tr>
+            <tr>
+                <th>42</th>
+                <td>ID</td>
+                <td>16</td>
+                <td>Idaho</td>
+                <td>3302</td>
+                <td>312</td>
+                <td>18.82</td>
+            </tr>
+            <tr>
+                <th>43</th>
+                <td>OK</td>
+                <td>40</td>
+                <td>Oklahoma</td>
+                <td>7378</td>
+                <td>796</td>
+                <td>18.71</td>
+            </tr>
+            <tr>
+                <th>44</th>
+                <td>VT</td>
+                <td>50</td>
+                <td>Vermont</td>
+                <td>1109</td>
+                <td>119</td>
+                <td>17.71</td>
+            </tr>
+            <tr>
+                <th>45</th>
+                <td>WY</td>
+                <td>56</td>
+                <td>Wyoming</td>
+                <td>1009</td>
+                <td>94</td>
+                <td>17.46</td>
+            </tr>
+            <tr>
+                <th>46</th>
+                <td>PR</td>
+                <td>72</td>
+                <td>Puerto Rico</td>
+                <td>5352</td>
+                <td>1329</td>
+                <td>16.75</td>
+            </tr>
+            <tr>
+                <th>47</th>
+                <td>OR</td>
+                <td>41</td>
+                <td>Oregon</td>
+                <td>5237</td>
+                <td>838</td>
+                <td>12.50</td>
+            </tr>
+            <tr>
+                <th>48</th>
+                <td>WV</td>
+                <td>54</td>
+                <td>West Virginia</td>
+                <td>2217</td>
+                <td>140</td>
+                <td>12.28</td>
+            </tr>
+            <tr>
+                <th>49</th>
+                <td>AK</td>
+                <td>2</td>
+                <td>Alaska</td>
+                <td>610</td>
+                <td>105</td>
+                <td>8.27</td>
+            </tr>
+            <tr>
+                <th>50</th>
+                <td>MT</td>
+                <td>30</td>
+                <td>Montana</td>
+                <td>573</td>
+                <td>34</td>
+                <td>5.39</td>
+            </tr>
+            <tr>
+                <th>51</th>
+                <td>HI</td>
+                <td>15</td>
+                <td>Hawaii</td>
+                <td>654</td>
+                <td>38</td>
+                <td>4.60</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <!-- Start of footer -->
+    <footer class="footer navbar-fixed-bottom">
+        <div class="two-toned-footer-color"></div>
+        <p class="text-muted text-muted-footer text-center">
+            &copy; Copyright DavidJHoff 2020
+        </p>
+    </footer>
+    <!-- End of footer -->
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>
